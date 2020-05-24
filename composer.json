@@ -1,0 +1,43 @@
+{
+    "name": "zhanang19/form-component",
+    "description": "This package will provide a form component as Laravel Component.",
+    "homepage": "https://github.com/zhanang19/form-component",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zainal Hasan",
+            "email": "mail@zhanang.id",
+            "homepage": "https://zhanang.id",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0",
+        "laravelcollective/html": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zhanang19\\FormComponent\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zhanang19\\FormComponent\\FormComponentServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
