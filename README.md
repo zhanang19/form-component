@@ -13,7 +13,6 @@ Install this package through [Composer](https://getcomposer.org/) by running com
 
 ## Usage
 - Basic usage
-
     Type this on your blade view:
     ```html
     <x-form-input name="first_name" />
@@ -29,6 +28,12 @@ Install this package through [Composer](https://getcomposer.org/) by running com
 - Advanced usage
     
     This package automatically merge attributes into form input tag. We also provide some useful slot here. Check [Laravel Component Section](https://laravel.com/docs/7.x/blade) for more usage.
+
+## Todo
+- [ ] Add configuration
+- [ ] Add unit test (see [#1](https://github.com/zhanang19/form-component/issues/1))
+- [ ] Add form horizontal layouts in Bulma theme
+- [ ] Add form group layouts in Bootstrap theme
 
 ## Support
 - [Buy me a coffee](https://www.buymeacoffee.com/zhanang19)
