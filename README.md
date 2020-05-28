@@ -1,5 +1,7 @@
 # Laravel 7 Form Component
 
+![Featured image](docs/img/featured.png "Featured image by @myta1981 on Dribbble")
+
 This is a packages that provides form component supporting modern CSS Framework.
 This work was inspired from [nafiesl/FormField](https://github.com/nafiesl/FormField)
 
@@ -34,6 +36,11 @@ Install this package through [Composer](https://getcomposer.org/) by running com
 - [ ] Add unit test (see [#1](https://github.com/zhanang19/form-component/issues/1))
 - [ ] Add form horizontal layouts in Bulma theme
 - [ ] Add form group layouts in Bootstrap theme
+
+## Credits
+- [Zainal Hasan](https://github.com/zhanang19)
+- [Meyta Tan](https://dribbble.com/myta1981)
+- [All Contributors](../../contributors)
 
 ## Support
 - [Buy me a coffee](https://www.buymeacoffee.com/zhanang19)
