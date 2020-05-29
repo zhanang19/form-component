@@ -11,7 +11,7 @@ Install this package through [Composer](https://getcomposer.org/) by running com
 ## Configuration
 - This package come with 2 form theme from [Bootstrap](https://getbootstrap.com) and [Bulma](https://bulma.io)
 - You must publish config by running `php artisan vendor:publish --provider="Zhanang19\FormComponent\FormComponentServiceProvider" --tag=config` to setup form theme
-- You can optionally publish views by running `php artisan vendor:publish --provider="Zhanang19\FormComponent\FormComponentServiceProvider --tag=config"`. This is useful when you want to add your own theme or customize default theme
+- You can optionally publish views by running `php artisan vendor:publish --provider="Zhanang19\FormComponent\FormComponentServiceProvider" --tag=config`. This is useful when you want to add your own theme or customize default theme
 
 ## Usage
 - Basic usage
@@ -32,7 +32,7 @@ Install this package through [Composer](https://getcomposer.org/) by running com
     This package automatically merge attributes into form input tag. We also provide some useful slot here. Check [Laravel Component Section](https://laravel.com/docs/7.x/blade) for more usage.
 
 ## Todo
-- [ ] Add configuration
+- [x] Add configuration
 - [ ] Add unit test (see [#1](https://github.com/zhanang19/form-component/issues/1))
 - [ ] Add form horizontal layouts in Bulma theme
 - [ ] Add form group layouts in Bootstrap theme
