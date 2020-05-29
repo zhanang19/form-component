@@ -10,7 +10,7 @@ Install this package through [Composer](https://getcomposer.org/) by running com
 
 ## Configuration
 - This package come with 2 form theme from [Bootstrap](https://getbootstrap.com) and [Bulma](https://bulma.io)
-- You must publish config by running `php artisan vendor:publish --provider="Zhanang19\FormComponent\FormComponentServiceProvider --tag=config"` to setup form theme
+- You must publish config by running `php artisan vendor:publish --provider="Zhanang19\FormComponent\FormComponentServiceProvider" --tag=config` to setup form theme
 - You can optionally publish views by running `php artisan vendor:publish --provider="Zhanang19\FormComponent\FormComponentServiceProvider --tag=config"`. This is useful when you want to add your own theme or customize default theme
 
 ## Usage

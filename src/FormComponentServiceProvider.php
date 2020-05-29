@@ -22,6 +22,10 @@ class FormComponentServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
+                __DIR__ . '/../config/form-component.php' => config_path('form-component.php')
+            ], 'config');
+
+            $this->publishes([
                 __DIR__ . '/../resources/views' => base_path('resources/views/vendor/form-component'),
             ], 'views');
         }
