@@ -2,21 +2,21 @@
 
 namespace Tests;
 
-class TextFormTest extends Testcase
+use Zhanang19\FormComponent\View\Components\Input;
+
+class TextFormTest extends TestCase
 {
     /** @test */
     public function it_return_default_text_input()
     {
-        $html = '<div class="form-group">';
-        $html .= '<label for="" class="control-label">Name</label>';
-        $html .= '<input name="name" class="form-control">';
-        $html .= '</div>';
+        $inputClass = Input::class;
+        $inputAlias = 'form-input';
+        $compiledTag = " @component('{$inputClass}', '{$inputAlias}', ['name' => '123'])\n";
+        $compiledTag .= "<?php \$component->withAttributes([]); ?>\n";
+        $compiledTag .= "@endcomponentClass ";
 
-        $component = '<x-form />'; // TODO: Set HTML string compiled from blade component here
+        $component = $this->getCompiledTag('<x-form-input name="123"/>');
 
-        $this->assertEquals(
-            $html,
-            $component
-        );
+        $this->assertSame($compiledTag, $component);
     }
 }
