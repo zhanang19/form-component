@@ -2,6 +2,8 @@
 
 namespace Tests;
 
+use Illuminate\Support\Facades\Blade;
+use Illuminate\View\Compilers\ComponentTagCompiler;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 use Zhanang19\FormComponent\FormBuilder;
 use Zhanang19\FormComponent\FormComponentServiceProvider;
@@ -19,17 +21,20 @@ class TestCase extends BaseTestCase
      */
     protected $util;
 
+    protected $componentTagCompiler;
+
     /**
      * Setup the test environment.
      *
      * @return void
      */
-    protected function setUp():void
+    protected function setUp(): void
     {
         parent::setUp();
 
         $this->formBuilder = new FormBuilder();
         $this->util = new Util();
+        $this->componentTagCompiler = new ComponentTagCompiler(Blade::getClassComponentAliases());
     }
 
     /**
@@ -42,5 +47,10 @@ class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [FormComponentServiceProvider::class];
+    }
+
+    protected function getCompiledTag(string $componentTag)
+    {
+        return $this->componentTagCompiler->compileTags($componentTag);
     }
 }
